@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Grayscale v7.0.6 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -81,10 +71,7 @@
   --bs-link-hover-color: #50817e;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #faf4e0;
-}
-
-
-*,
+}*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -359,7 +346,7 @@ caption {
 
 th {
   text-align: inherit;
-  text-align: -webkit-match-parent;
+  text-align: var(--bs-light-rgb);
 }
 
 thead,
@@ -449,15 +436,16 @@ select:disabled {
 }
 
 button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  appearance: button;
 }
+
 button:not(:disabled),
-[type=button]:not(:disabled),
-[type=reset]:not(:disabled),
-[type=submit]:not(:disabled) {
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
   cursor: pointer;
 }
 
@@ -508,9 +496,9 @@ legend + * {
   height: auto;
 }
 
-[type=search] {
+[type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 /* rtl:raw:
@@ -531,8 +519,9 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
+  appearance: button;
 }
+
 
 output {
   display: inline-block;
@@ -2002,33 +1991,38 @@ progress {
 @media (max-width: 575.98px) {
   .table-responsive-sm {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
 }
+
 @media (max-width: 767.98px) {
   .table-responsive-md {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
 }
+
 @media (max-width: 991.98px) {
   .table-responsive-lg {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
 }
+
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
 }
+
 @media (max-width: 1399.98px) {
   .table-responsive-xxl {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
 }
+
 .form-label {
   margin-bottom: 0.5rem;
 }
