@@ -288,6 +288,7 @@ samp {
 .btn:hover {
   background-color: #0056b3;
 }
+
 pre {
   display: block;
   margin-top: 0;
@@ -1984,7 +1985,7 @@ progress {
 
 .table-responsive {
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 575.98px) {
